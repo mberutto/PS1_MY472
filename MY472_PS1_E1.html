@@ -369,8 +369,8 @@ head(borough_1)</code></pre>
 ## 5                Brent         India       69.5     407250
 ## 6              Bromley         India       75.3     374975</code></pre>
 <p>##Creating the second function</p>
-<pre class="r"><code>delete_first_row = function(data){
-  return(data[-1, ])
+<pre class="r"><code>delete_first_row = function(data_new){
+  return(data_new[-1, ])
 }
 
 borough_2 = delete_first_row(borough_1)
