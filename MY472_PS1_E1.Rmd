@@ -1,0 +1,9 @@
+## Creating the first finction
+```{r}
+delete_first_col = function(data){
+  return(data[, -1])
+}
+
+borough = read.csv("borough.csv")
+borough_1 = delete_first_col(borough)
+head(borough_1)
