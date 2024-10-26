@@ -368,6 +368,20 @@ head(borough_1)</code></pre>
 ## 4               Bexley       Nigeria       75.1     275000
 ## 5                Brent         India       69.5     407250
 ## 6              Bromley         India       75.3     374975</code></pre>
+<p>##Creating the second function</p>
+<pre class="r"><code>delete_first_row = function(data){
+  return(data[-1, ])
+}
+
+borough_2 = delete_first_row(borough_1)
+head(borough_2)</code></pre>
+<pre><code>##                   Area       Country Employment HousePrice
+## 2 Barking and Dagenham       Nigeria       65.8     243500
+## 3               Barnet         India       68.5     445000
+## 4               Bexley       Nigeria       75.1     275000
+## 5                Brent         India       69.5     407250
+## 6              Bromley         India       75.3     374975
+## 7               Camden United States       69.2     700000</code></pre>
 </div>
 
 
